@@ -1,0 +1,36 @@
+Imaginatio XVII
+
+Una seccion con el video promocional ocupando toda la pantalla (/assets/promo1.mp4)
+
+# Conferencias
+
+* Business Development Como Alternativa de Crecimiento en Proyectos Multimedia
+* Diseñando Visibilidad: Cómo Entrar al Mundo Indie de los Videojuegos
+* Música en Videojuegos
+
+Una seccion mostrando el poster (/assets/Poster.jpg)
+
+# Concurso Videojuego Arcade
+
+* link: https://kashiartist.itch.io/akaya
+  img: /img/games/Akaya.png
+
+* link: https://zergiopc.itch.io/how-not-to-survive-a-robot-invasion
+  img: /img/games/Robots.png
+
+# Muestras Academicas
+
+## Exposición Un Mundo de Papel
+Usar las fotos de /img/mundo_papel/
+
+## Exposición de Ilustraciones
+Usar las fotos de /img/ilustracion/
+
+## Grupo Artistico Neogranadino
+Usar las fotos de /img/grupo_artistico/
+
+# Galeria de fotos:
+Usar las fotos de /img/gallery/
+
+
+Agregar el logotipo donde creas conveniente (/assets/logotipo.png)
