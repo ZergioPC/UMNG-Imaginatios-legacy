@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imaginatio IX</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 700;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .poster-section {
+            border: 4px solid #fff;
+            margin-bottom: 60px;
+            position: relative;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .poster {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .title {
+            font-size: 4rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #ff0000 0%, #00ff00 50%, #0000ff 100%);
+        }
+        
+        .info-section {
+            border: 4px solid #fff;
+            padding: 40px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .info-section::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: #ff0000;
+            z-index: -1;
+        }
+        
+        .info-section:nth-child(even)::before {
+            background: #00ff00;
+        }
+        
+        .info-section:nth-child(3n)::before {
+            background: #0000ff;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .speakers {
+            border: 4px solid #fff;
+            padding: 40px;
+            position: relative;
+        }
+        
+        .speakers::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+            z-index: -1;
+        }
+        
+        .speakers-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .speaker-item {
+            padding: 20px;
+            border: 2px solid #fff;
+            background-color: #000;
+            font-size: 1.1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .speaker-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 100%;
+            background: #ff0000;
+        }
+        
+        .speaker-item:nth-child(2n)::before {
+            background: #00ff00;
+        }
+        
+        .speaker-item:nth-child(3n)::before {
+            background: #0000ff;
+        }
+        
+        .speaker-item:hover {
+            transform: translate(10px, 0);
+            background-color: #111;
+        }
+        
+        .bauhaus-element {
+            position: fixed;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .circle-red {
+            width: 150px;
+            height: 150px;
+            background: #ff0000;
+            border-radius: 50%;
+            top: 10%;
+            right: 5%;
+            opacity: 0.1;
+        }
+        
+        .square-blue {
+            width: 100px;
+            height: 100px;
+            background: #0000ff;
+            bottom: 15%;
+            left: 5%;
+            opacity: 0.1;
+            transform: rotate(45deg);
+        }
+        
+        .triangle-green {
+            width: 0;
+            height: 0;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+            border-bottom: 130px solid #00ff00;
+            top: 50%;
+            left: 3%;
+            opacity: 0.1;
+        }
+        
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .info-section, .speakers {
+                padding: 20px;
+            }
+            
+            .speakers-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bauhaus-element circle-red"></div>
+    <div class="bauhaus-element square-blue"></div>
+    <div class="bauhaus-element triangle-green"></div>
+    
+    <div class="container">
+        <div class="poster-section">
+            <img src="assets/Imaginatio 9.jpg" alt="Imaginatio IX Poster" class="poster">
+        </div>
+        
+        <h1 class="title">Imaginatio IX</h1>
+        
+        <div class="info-section">
+            <h2 class="section-title">Enfoque Principal</h2>
+            <p class="description">
+                El noveno Imaginatio trae un tema más ecológico. Incluye charlas sobre cómo esta carrera de ingeniería puede ayudar en aspectos como la producción de alimentos. También se realizó el primer torneo de fútbol del evento.
+            </p>
+        </div>
+        
+        <div class="speakers">
+            <h2 class="section-title">Conferencistas</h2>
+            <ul class="speakers-list">
+                <li class="speaker-item">Juan Carlos Cuervo</li>
+                <li class="speaker-item">Danny González</li>
+                <li class="speaker-item">William Moscoso</li>
+                <li class="speaker-item">Diego Beltrán</li>
+            </ul>
+        </div>
+        
+        <div class="info-section">
+            <h2 class="section-title">Talleres</h2>
+            <p class="description">
+                <strong>Taller 1:</strong> Ciencia en Movimiento<br>
+                <strong>Taller 2:</strong> Escenarios Paradójicos<br>
+                <strong>Taller 3:</strong> Del Cultivo a la Mesa
+            </p>
+        </div>
+    </div>
+</body>
+</html>

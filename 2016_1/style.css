@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header con efecto neon */
+.header {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(45deg, #000, #0a0a0a);
+    border: 2px solid #00ffff;
+    box-shadow: 
+        0 0 20px #00ffff,
+        inset 0 0 20px rgba(0, 255, 255, 0.1);
+    margin-bottom: 40px;
+}
+
+.neon-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ff0040;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-shadow: 
+        0 0 10px #ff0040,
+        0 0 20px #ff0040,
+        0 0 30px #ff0040,
+        0 0 40px #ff0040;
+    animation: neon-flicker 2s infinite alternate;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #00ffff;
+    margin-top: 10px;
+    text-shadow: 
+        0 0 5px #00ffff,
+        0 0 10px #00ffff;
+    animation: neon-pulse 1.5s infinite alternate;
+}
+
+/* Secciones */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.poster-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    background: linear-gradient(135deg, #1a1a1a, #000);
+    border: 1px solid #00ffff;
+    box-shadow: 
+        0 0 15px rgba(0, 255, 255, 0.3),
+        inset 0 0 15px rgba(0, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.poster {
+    max-width: 400px;
+    height: auto;
+    border: 3px solid #ff0040;
+    box-shadow: 
+        0 0 20px #ff0040,
+        0 0 40px rgba(255, 0, 64, 0.5);
+    filter: brightness(1.2) contrast(1.1);
+}
+
+.description h2 {
+    color: #00ffff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 
+        0 0 8px #00ffff,
+        0 0 16px #00ffff;
+}
+
+.description p {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* Actividad especial */
+.special-activity {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(45deg, #0a0a0a, #1a1a1a);
+    border: 2px solid #ff0040;
+    box-shadow: 
+        0 0 25px #ff0040,
+        inset 0 0 25px rgba(255, 0, 64, 0.1);
+    border-radius: 10px;
+}
+
+.special-activity h2 {
+    color: #ff0040;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 
+        0 0 10px #ff0040,
+        0 0 20px #ff0040,
+        0 0 30px #ff0040;
+}
+
+.special-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border: 2px solid #00ffff;
+    box-shadow: 
+        0 0 15px #00ffff,
+        0 0 30px rgba(0, 255, 255, 0.5);
+    filter: brightness(1.1) saturate(1.2);
+}
+
+/* Galería */
+.gallery {
+    padding: 30px;
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    border: 1px solid #ff0040;
+    box-shadow: 
+        0 0 20px rgba(255, 0, 64, 0.3),
+        inset 0 0 20px rgba(255, 0, 64, 0.1);
+    border-radius: 10px;
+}
+
+.gallery h2 {
+    text-align: center;
+    color: #00ffff;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 
+        0 0 10px #00ffff,
+        0 0 20px #00ffff;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #ff0040;
+    box-shadow: 
+        0 0 10px #ff0040,
+        0 0 20px rgba(255, 0, 64, 0.4);
+    transition: all 0.3s ease;
+    filter: brightness(1.1) contrast(1.1);
+}
+
+.gallery-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 20px #00ffff,
+        0 0 40px rgba(0, 255, 255, 0.6);
+    border-color: #00ffff;
+}
+
+/* Animaciones */
+@keyframes neon-flicker {
+    0%, 100% {
+        text-shadow: 
+            0 0 10px #ff0040,
+            0 0 20px #ff0040,
+            0 0 30px #ff0040,
+            0 0 40px #ff0040;
+    }
+    50% {
+        text-shadow: 
+            0 0 15px #ff0040,
+            0 0 25px #ff0040,
+            0 0 35px #ff0040,
+            0 0 45px #ff0040,
+            0 0 55px #ff0040;
+    }
+}
+
+@keyframes neon-pulse {
+    0% {
+        opacity: 0.8;
+        text-shadow: 
+            0 0 5px #00ffff,
+            0 0 10px #00ffff;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 
+            0 0 10px #00ffff,
+            0 0 20px #00ffff,
+            0 0 30px #00ffff;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .neon-title {
+        font-size: 2.5rem;
+    }
+    
+    .poster-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .poster {
+        max-width: 100%;
+    }
+    
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}

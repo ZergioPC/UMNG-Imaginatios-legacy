@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imaginatio VII</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #87CEEB 0%, #98FB98 100%);
+            color: #2C3E50;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border: 8px solid #4682B4;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            color: #2C3E50;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .poster-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .poster {
+            max-width: 100%;
+            height: auto;
+            border: 12px solid #90EE90;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .poster:hover {
+            transform: scale(1.05);
+        }
+        
+        .content {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 40px;
+            border: 6px solid #4682B4;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .description {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        
+        .speakers {
+            margin-top: 30px;
+        }
+        
+        .speakers h2 {
+            font-size: 2.2em;
+            color: #2C3E50;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 4px solid #90EE90;
+            padding-bottom: 10px;
+        }
+        
+        .speakers ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .speakers li {
+            background: rgba(135, 206, 235, 0.3);
+            padding: 15px;
+            border: 3px solid #4682B4;
+            border-radius: 10px;
+            font-size: 1.1em;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .speakers li:hover {
+            background: rgba(152, 251, 152, 0.4);
+            transform: translateY(-3px);
+        }
+        
+        .gallery {
+            margin-top: 40px;
+        }
+        
+        .gallery h2 {
+            font-size: 2.2em;
+            color: #2C3E50;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 4px solid #90EE90;
+            padding-bottom: 10px;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border: 8px solid #4682B4;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 6px solid #4682B4;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .footer-text {
+            font-size: 1.2em;
+            color: #2C3E50;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Imaginatio VII</h1>
+        </header>
+        
+        <div class="poster-container">
+            <img src="assets/Cartel_01_Imaginatio 8.jpg" alt="Cartel Imaginatio VII" class="poster">
+        </div>
+        
+        <main class="content">            
+            <section class="speakers">
+                <h2>Conferencistas</h2>
+                <ul>
+                    <li>Laura Martínez</li>
+                    <li>Ferney Osorio</li>
+                    <li>Jairo Arcos</li>
+                </ul>
+            </section>
+        </main>
+        
+        <section class="gallery">
+            <h2>Galería de Eventos</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/foto1.jpg" alt="Evento 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foto2.jpg" alt="Evento 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foto3.jpg" alt="Evento 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foto4.jpg" alt="Evento 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foto5.jpg" alt="Evento 5">
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p class="footer-text">Imaginatio VII - Celebrando la creatividad y el arte digital</p>
+        </footer>
+    </div>
+</body>
+</html>
