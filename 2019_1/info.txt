@@ -1,0 +1,44 @@
+Imaginatio XI
+
+Taller: Proyecciones de Mapping con AfterEfects y Cinema 4D
+  Tallerista:
+  Elizabeth Garzón
+
+  Descripción:
+  En este taller se presentan conceptos fundamentales de proyección sobre una superficie volumetrica mezclando técnicas de 3D. 
+
+Taller: Proyectos de base tecnológica con Impresión 3D
+  Talleristas:
+  David Cañón
+  Laura Holguín
+
+  Descripción:
+  En este taller se se aprenderá la mejor forma de configurar modelos digitales para impresion 3D, utilizando Cura y Autodesk Meshmixer.
+
+Taller: Realidad mixta y Aplicaciones
+  Talleristas:
+  Rafael Reyes
+
+  Descripción:
+  En este Taller veremos el concepto de realidad mixta por medio de ejemplos que combinan realidad aumentada, mapping , hologramas e interacción con sensores y actuadores.
+
+Taller: Arte interactivo con Processing 
+  Tallerista:
+  Laura Juliana Cortés
+
+  Descripción:
+  En este taller se realiza una aproximación práctica a la programación con Processing a través de la creación de aplicaciones de arte interactivo. Se presentan y aplican conceptos fundamentales de la programación de computadores, como condicionales y ciclos, desde el desarrollo de aplicaciones sencillas
+
+Taller: Dramaturgia y creación de personajes
+  Tallerista:
+  Carlos García Ruiz
+
+  Descripción:
+  En este breve taller estudiaremos cómo se trabaja un personaje para la escena o para el audiovisual; cine, tv, web... Nos acercarnos al personaje usando técnicas básicas que dibujen los aspectos más relevantes del mismo para, a partir de ello, continuar definiendo su caracter. El objetivo fundamental es saber plantear los lineamientos maestros de un ser que tomara vida en la ficción.
+
+Taller: Realidad Virtual en Web
+  Tallerista:
+  Rafael Reyes
+
+  Descripción:
+  En este Taller veremos el Diseño de una aplicación de realidad virtual para páginas web de bajo y alto costo con modelos de navegación e interacción utilizando diferentes motores y dispositivos.
