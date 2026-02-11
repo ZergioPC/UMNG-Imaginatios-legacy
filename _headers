@@ -1,0 +1,4 @@
+Content-Security-Policy: frame-ancestors 'self' https://imaginatio.cc https://www.imaginatio.cc
+
+Cross-Origin-Resource-Policy: same-site
+Cross-Origin-Embedder-Policy: require-corp
