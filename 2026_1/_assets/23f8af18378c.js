@@ -1,0 +1,1 @@
+import{j as t}from"./jsx-runtime.D_zvdyIk.js";import{s as o}from"./reto-economia-c.e11f2c75.BwfGzwJq.js";function m({children:s}){return t.jsx("div",{className:o.BtnAviso,children:s})}export{m as BtnAviso};
